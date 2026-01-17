@@ -1,0 +1,75 @@
+.sidebar{
+    width: 18%;
+    min-height: 100vh;
+    border: 1.5px solid #a9a9a9;
+    border-top: 0;
+    font-size: max(1vw, 10px);
+    background-color: #fff;
+}
+
+/* ================= OPTIONS ================= */
+.sidebar-options{
+    padding-top: 40px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ================= OPTION ================= */
+.sidebar-option{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #a9a9a9;
+    padding: 8px 10px;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sidebar-option.active{
+    background-color: #fff0ed;
+    border-color: tomato;
+}
+
+/* ================= HOVER ================= */
+.sidebar-option:hover{
+    background-color: #f9f9f9;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 900px){
+    .sidebar{
+        width: 25%;
+        font-size: 12px;
+    }
+
+    .sidebar-options{
+        padding-left: 15%;
+        gap: 16px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px){
+    .sidebar{
+        width: 100%;
+        min-height: auto;
+        border: none;
+        border-bottom: 1.5px solid #a9a9a9;
+    }
+
+    .sidebar-options{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .sidebar-option{
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

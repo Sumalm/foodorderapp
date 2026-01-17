@@ -1,0 +1,50 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 45px;
+    width: 100%;
+}
+
+/* ================= LOGO ================= */
+.navbar .logo{
+    width: max(80px, 10%);
+    cursor: pointer;
+}
+
+/* ================= PROFILE ================= */
+.navbar .profile{
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 900px){
+    .navbar{
+        padding: 8px 25px;
+    }
+
+    .navbar .logo{
+        width: 90px;
+    }
+
+    .navbar .profile{
+        width: 36px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px){
+    .navbar{
+        padding: 8px 15px;
+    }
+
+    .navbar .logo{
+        width: 80px;
+    }
+
+    .navbar .profile{
+        width: 32px;
+    }
+}

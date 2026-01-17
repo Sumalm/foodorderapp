@@ -1,0 +1,37 @@
+.Explore-Menu h1 {
+  font-weight: 500;
+}
+
+.Explore-Menu-Text {
+  color: gray;
+  max-width: 60%;
+}
+
+.Explore-Menu-List {
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+}
+
+.Explore-Menu-List::-webkit-scrollbar {
+  display: none;
+}
+
+.Explore-Menu-List-Item img {
+  width: 7.5vw;
+  min-width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Explore-Menu-List-Item p {
+  margin-top: 10px;
+  font-size: max(1.4vw, 14px);
+}
+
+@media (max-width: 768px) {
+  .Explore-Menu-Text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}

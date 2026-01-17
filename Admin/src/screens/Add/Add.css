@@ -1,0 +1,144 @@
+.add{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= FORM ================= */
+.add form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* ================= IMAGE UPLOAD ================= */
+.add-img-upload{
+    text-align: center;
+}
+
+.add-img-upload img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-img-upload input{
+    display: none;
+}
+
+/* ================= INPUTS ================= */
+.add-product-name input,
+.add-product-description textarea,
+.add-category select,
+.add-price input{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+}
+
+.add-product-description textarea{
+    resize: none;
+}
+
+/* ================= CATEGORY + PRICE ================= */
+.add-category-price{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.add-category,
+.add-price{
+    flex: 1;
+}
+
+.add-category select{
+    width: 100%;
+}
+
+/* ================= SUBMIT ================= */
+.add-product-submit{
+    text-align: center;
+}
+
+.add-product-submit button{
+    padding: 10px 20px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #ff6200;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-product-submit button:hover{
+    background-color: #ff6200;
+    color: #f9f9f9;
+}
+
+/* ================= REMOVE NUMBER ARROWS ================= */
+.add-price input[type="number"]::-webkit-inner-spin-button,
+.add-price input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px){
+    .add{
+        max-width: 90%;
+        padding: 18px;
+    }
+
+    .add-img-upload img{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px){
+
+    .add{
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .add-category-price{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add p{
+        font-size: 15px;
+    }
+
+    .add-product-submit button{
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+

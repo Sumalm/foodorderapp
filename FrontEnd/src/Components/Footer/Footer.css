@@ -1,0 +1,40 @@
+.footer {
+  background-color: black;
+  color: grey;
+  padding: 40px 8vw;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-content-left img {
+  width: 150px;
+}
+
+.footer-content li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer hr {
+  margin: 20px 0;
+  height: 2px;
+  background-color: grey;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}

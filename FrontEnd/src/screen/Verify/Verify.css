@@ -1,0 +1,35 @@
+.verify{
+    min-height: 40vh;
+    display: grid;
+    place-items: center;
+}
+
+/* ================= SPINNER ================= */
+.verify .spinner{
+    width: 60px;
+    height: 60px;
+    border: 5px solid #bdbdbd;
+    border-top-color: tomato;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px){
+    .verify{
+        min-height: 30vh;
+    }
+
+    .verify .spinner{
+        width: 50px;
+        height: 50px;
+        border-width: 4px;
+    }
+}

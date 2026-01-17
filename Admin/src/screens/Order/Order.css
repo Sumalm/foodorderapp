@@ -1,0 +1,78 @@
+.order-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0;
+    font-size: 14px;
+    color: #505050;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+/* ================= TEXT ================= */
+.order-item-food,
+.order-item-name{
+    font-weight: 600;
+}
+
+.order-item-name{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.order-item-address{
+    margin-bottom: 10px;
+}
+
+/* ================= SELECT ================= */
+.order-item select{
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width: max(11vw, 120px);
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1000px){
+    .order-item{
+        grid-template-columns: 0.5fr 2fr 1fr;
+        font-size: 12px;
+        gap: 20px;
+        padding: 15px 10px;
+    }
+
+    .order-item select{
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .order-item img{
+        width: 40px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px){
+    .order-item{
+        grid-template-columns: 1fr;
+        gap: 12px;
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .order-item-name{
+        margin-top: 10px;
+    }
+
+    .order-item select{
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

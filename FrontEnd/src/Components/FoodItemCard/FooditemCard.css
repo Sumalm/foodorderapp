@@ -1,0 +1,140 @@
+.food-item-card{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000015;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s;
+    background-color: #fff;
+}
+
+.food-item-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 15px 25px #00000020;
+}
+
+/* ================= IMAGE ================= */
+.food-item-image{
+    width: 100%;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.food-item-image-container{
+    position: relative;
+}
+
+/* ================= INFO ================= */
+.food-item-info{
+    padding: 18px;
+}
+
+.food-item-name-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.food-item-name-rating p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.food-item-name-rating img{
+    width: 70px;
+}
+
+.food-item-desc{
+    color: darkgrey;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* ================= PRICE ================= */
+.food-item-price{
+    color: darkred;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* ================= ADD / COUNTER ================= */
+.food-item-image-container .add{
+    position: absolute;
+    width: 35px;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.food-item-counter{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px #00000020;
+}
+
+.food-item-counter img{
+    width: 26px;
+    cursor: pointer;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px){
+
+    .food-item-info{
+        padding: 14px;
+    }
+
+    .food-item-name-rating p{
+        font-size: 16px;
+    }
+
+    .food-item-name-rating img{
+        width: 60px;
+    }
+
+    .food-item-desc{
+        font-size: 12px;
+    }
+
+    .food-item-price{
+        font-size: 18px;
+    }
+
+    .food-item-image-container .add{
+        width: 32px;
+    }
+
+    .food-item-counter img{
+        width: 24px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .food-item-card{
+        border-radius: 12px;
+    }
+
+    .food-item-info{
+        padding: 12px;
+    }
+
+    .food-item-name-rating p{
+        font-size: 15px;
+    }
+
+    .food-item-price{
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,129 @@
+.place-order {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= SECTIONS ================= */
+.delivery-info,
+.cart-totals {
+  width: 48%;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.delivery-info h2,
+.cart-totals h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* ================= FORM ================= */
+.delivery-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row input {
+  width: calc(50% - 7.5px);
+}
+
+.delivery-info input {
+  background: transparent;
+  color: #363434;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.delivery-info input:focus {
+  outline: none;
+  border-color: #ff4b2b;
+  box-shadow: 0 0 5px rgba(255, 75, 43, 0.4);
+}
+
+/* ================= CART TOTALS ================= */
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.cart-total-details p:last-child {
+  font-weight: bold;
+}
+
+.cart-totals button {
+  margin-top: 20px;
+  width: 40%;
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-totals button:hover {
+  background-color: #bf3821;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .delivery-info,
+  .cart-totals {
+    width: 100%;
+  }
+
+  .cart-totals button {
+    width: 60%;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+
+  .place-order {
+    padding: 10px;
+  }
+
+  .delivery-info h2,
+  .cart-totals h2 {
+    font-size: 1.3em;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row input {
+    width: 100%;
+  }
+
+  .cart-totals button {
+    width: 100%;
+    font-size: 15px;
+  }
+}

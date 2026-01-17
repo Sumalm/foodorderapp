@@ -1,0 +1,108 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1000; /* ✅ keeps navbar above header */
+}
+
+.NavBar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.NavBar li {
+  cursor: pointer;
+}
+
+.NavBar .active {
+  border-bottom: 2px solid slategray;
+}
+
+.NavBar-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.NavBar button {
+  background: transparent;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.NavBar-cart-icon {
+  position: relative;
+}
+
+.NavBar-cart-icon .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -6px;
+  right: -6px;
+}
+
+/* ===== PROFILE DROPDOWN FIX ===== */
+
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  top: 120%; /* ✅ moves dropdown below icon */
+  right: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #fff2ef;
+  border-radius: 8px;
+  padding: 12px 18px;
+  border: 1px solid tomato;
+  z-index: 2000; /* ✅ above header image */
+  min-width: 160px;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;   /* ✅ bigger click area */
+  border-radius: 6px;
+}
+
+.nav-profile-dropdown li:hover {
+  background-color: #ffe1d8;
+}
+
+.nav-profile-dropdown img {
+  width: 18px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 800px) {
+  .NavBar-menu {
+    display: none;
+  }
+
+  .NavBar-right {
+    gap: 20px;
+  }
+
+  .NavBar button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
