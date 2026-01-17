@@ -1,8 +1,14 @@
 # dependencies
 node_modules/
 
-# environment files
+# env files
 .env
+backend/.env
+FrontEnd/.env
+Admin/.env
+
+# uploads (do not push images)
+backend/uploads/
 
 # build outputs
 dist/
